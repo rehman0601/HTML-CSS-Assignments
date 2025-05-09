@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            
+        }
+        h2{
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>🔹 Exercise 1: Horizontal Navigation Bar</h2>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }   
+        nav a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+    </style>
+    <h2>🔹 Exercise 2: Center a Box</h2>
+    <div class="box">
+        <div class="centered">
+            <p>centered box</p>
+        </div>
+    </div>
+    <style>
+        .box{
+            display: flex;
+            background-color: #333;
+           
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+        }
+        .centered{
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <h2>🔹 Exercise 3: Responsive Card Row</h2>
+    <div class="card-row">
+        <div class="card">
+            <h3>Card 1</h3>
+            <p>This is the first card.</p>
+        </div>
+        <div class="card">
+            <h3>Card 2</h3>
+            <p>This is the second card.</p>
+        </div>
+        <div class="card">
+            <h3>Card 3</h3>
+            <p>This is the third card.</p>
+        </div>
+    </div>
+    <style>
+        .card-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            flex: 1 1 250px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+    <h2>🔹 Exercise 4: Equal Height Columns</h2>
+    <div class="equal-height-columns">
+        <div class="column">
+            <h3>Column 1</h3>
+            <p>This is some content in the first column.</p>
+        </div>
+        <div class="column">
+            <h3>Column 2</h3>
+            <p>This is some content in the second column. It has more text to demonstrate the equal height effect.</p>
+        </div>
+        <div class="column">
+            <h3>Column 3</h3>
+            <p>This is some content in the third column.</p>
+        </div>
+    </div>
+    <style>
+        .equal-height-columns {
+            display: flex;
+            align-items: stretch;
+            gap: 20px;
+        }
+        .column {
+            flex: 1;
+            background-color: #eaeaea;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <h2>🔹 Exercise 5: Sidebar + Main Content</h2>
+    <div class="sidebar-main">
+        <div class="sidebar">Sidebar</div>
+        <div class="main-content">Main Content</div>
+    </div>
+    <style>
+        .sidebar-main {
+            display: flex;
+            gap: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .main-content {
+            flex: 3;
+            background-color: #eaeaea;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+
+    <h2>🔹 Exercise 6: Button Row with Right Aligned Button</h2>
+    <div class="button-row">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+        <button class="right-button">Button 4</button>
+    </div>
+    <style>
+        .button-row {
+            display: flex;
+            gap: 10px;
+        }
+        .right-button {
+            margin-left: auto;
+        }
+    </style>
+
+    <h2>🔹 Exercise 7: Vertical Flexbox Navigation</h2>
+    <nav class="vertical-nav">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </nav>
+    <style>
+        .vertical-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #333;
+            padding: 10px;
+        }
+        .vertical-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 4px;
+        }
+    </style>
+
+    <h2>🔹 Exercise 8: Flex Order Change</h2>
+    <div class="flex-order">
+        <div class="item" style="order: 2;">Item 1</div>
+        <div class="item" style="order: 1;">Item 2</div>
+        <div class="item" style="order: 3;">Item 3</div>
+    </div>
+    <style>
+        .flex-order {
+            display: flex;
+            gap: 10px;
+        }
+        .item {
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+
+    <h2>🔹 Exercise 9: Grow One Box More Than Others</h2>
+    <div class="flex-grow">
+        <div class="box" style="flex-grow: 1;">Box 1</div>
+        <div class="box" style="flex-grow: 2;">Box 2</div>
+        <div class="box" style="flex-grow: 1;">Box 3</div>
+    </div>
+    <style>
+        .flex-grow {
+            display: flex;
+            gap: 10px;
+        }
+        .box {
+            padding: 20px;
+            background-color: #eaeaea;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+    <h2>🔹 Exercise 10: Profile Layout</h2>
+    <div class="profile-layout">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-image">
+        <div class="profile-info">
+            <h3>John Doe</h3>
+            <p>Web Developer</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </div>
+    </div>
+    <style>
+        .profile-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+        .profile-image {
+            flex: 0 0 150px;
+            border-radius: 50%;
+        }
+        .profile-info {
+            flex: 1;
+        }
+        @media (max-width: 600px) {
+            .profile-layout {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</body>
+</html>

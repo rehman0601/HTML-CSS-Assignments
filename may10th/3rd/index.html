@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Tasks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    .container {
+      background: #f0f0f0;
+      padding: 10px;
+    }
+    .item {
+      background: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h2>Task 1: Portfolio Page Layout</h2>
+    <div class="container" style="
+      display: grid;
+      grid-template-areas:
+        'header header'
+        'sidebar content'
+        'footer footer';
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 10px;
+    ">
+      <div class="item" style="grid-area: header;">Header</div>
+      <div class="item" style="grid-area: sidebar;">Sidebar</div>
+      <div class="item" style="grid-area: content;">Content</div>
+      <div class="item" style="grid-area: footer;">Footer</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Task 2: Responsive Grid Layout for a Photo Gallery</h2>
+    <div class="gallery">
+      <div class="item">Image 1</div>
+      <div class="item">Image 2</div>
+      <div class="item">Image 3</div>
+      <div class="item">Image 4</div>
+      <div class="item">Image 5</div>
+      <div class="item">Image 6</div>
+    </div>
+    <style>
+      .gallery {
+        display: grid;
+        gap: 10px;
+      }
+      @media (max-width: 599px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (min-width: 600px) and (max-width: 899px) {
+        .gallery {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (min-width: 900px) {
+        .gallery {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    </style>
+  </section>
+
+  <section>
+    <h2>Task 3: Simple Blog Layout</h2>
+    <div class="container" style="
+      display: grid;
+      grid-template-areas:
+        'header header'
+        'main sidebar'
+        'footer footer';
+      grid-template-columns: 2fr 1fr;
+      gap: 10px;
+    ">
+      <div class="item" style="grid-area: header;">Header</div>
+      <div class="item" style="grid-area: main;">Main Content</div>
+      <div class="item" style="grid-area: sidebar;">Sidebar</div>
+      <div class="item" style="grid-area: footer;">Footer</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Task 4: Responsive Product Grid</h2>
+    <div class="product-grid">
+      <div class="item">Product 1</div>
+      <div class="item">Product 2</div>
+      <div class="item">Product 3</div>
+      <div class="item">Product 4</div>
+      <div class="item">Product 5</div>
+      <div class="item">Product 6</div>
+      <div class="item">Product 7</div>
+      <div class="item">Product 8</div>
+    </div>
+    <style>
+      .product-grid {
+        display: grid;
+        gap: 15px;
+      }
+      @media (max-width: 599px) {
+        .product-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (min-width: 600px) and (max-width: 899px) {
+        .product-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (min-width: 900px) {
+        .product-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    </style>
+  </section>
+
+  <section>
+    <h2>Task 5: Personal Dashboard Layout</h2>
+    <div class="container" style="
+      display: grid;
+      grid-template-areas:
+        'header header'
+        'sidebar main';
+      grid-template-columns: 150px 1fr;
+      gap: 10px;
+    ">
+      <div class="item" style="grid-area: header;">Header</div>
+      <div class="item" style="grid-area: sidebar;">Sidebar</div>
+      <div class="item" style="grid-area: main;">Main Content (Widgets)</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Task 6: CSS Grid Resume Layout</h2>
+    <div class="container" style="
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+    ">
+      <div class="item">Skills, Experience, Education</div>
+      <div class="item">Profile Pic, Contact Info</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Task 7: CSS Grid for a Restaurant Menu</h2>
+    <div class="container" style="
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 15px;
+    ">
+      <div class="item">Starters</div>
+      <div class="item">Main Dishes</div>
+      <div class="item">Desserts</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Task 8: CSS Grid News Website Layout</h2>
+    <div class="container" style="
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr;
+      gap: 10px;
+    ">
+      <div class="item" style="grid-column: span 2;">Headline News</div>
+      <div class="item">Sidebar Articles</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Task 9: Creative Dashboard with CSS Grid</h2>
+    <div class="container" style="
+      display: grid;
+      grid-template-areas:
+        'chart stats'
+        'calendar notifications';
+      grid-template-columns: 2fr 1fr;
+      gap: 10px;
+    ">
+      <div class="item" style="grid-area: chart;">Chart</div>
+      <div class="item" style="grid-area: stats;">Statistics</div>
+      <div class="item" style="grid-area: calendar;">Calendar</div>
+      <div class="item" style="grid-area: notifications;">Notifications</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Task 10: Social Media Layout Using CSS Grid</h2>
+    <div class="container" style="
+      display: grid;
+      grid-template-areas:
+        'profile feed sidebar';
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 10px;
+    ">
+      <div class="item" style="grid-area: profile;">Profile</div>
+      <div class="item" style="grid-area: feed;">News Feed</div>
+      <div class="item" style="grid-area: sidebar;">Sidebar</div>
+    </div>
+  </section>
+
+</body>
+</html>

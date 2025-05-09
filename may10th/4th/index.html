@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>🔸 Exercise 1: Style a Simple Profile Card</h2>
+    <div class="card">
+    <h2 id="name">Alex Johnson</h2>
+    <p class="bio">Front-end Developer from New York</p>
+    <a href="#">View Profile</a>
+    </div>
+    <style>
+        .card{
+            background-color: lightgray;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px black;
+        }
+        #name{
+            color: darkblue;
+        }
+        .bio {
+            font-style: italic;
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    </style>
+    <h2>🔸 Exercise 2: Navigation Menu Styling</h2>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 10px;
+            margin: 0;
+        }
+        li{
+            margin: 10px;
+        }
+
+        a {
+            text-transform: uppercase;
+            margin: 10px;
+        }
+
+        a:hover {
+            color: red;
+        }
+        li:first-child{
+            background-color: black;
+        }
+    </style>
+    <h2>🔸 Exercise 3: Form Field Focus</h2>
+    <form>
+            <label>Email:</label>
+            <input type="email" />
+
+            <label>Password:</label>
+            <input type="password" />
+
+            <button>Login</button>
+    </form>
+    <style>
+        input {
+            border: 1px solid lightgray;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        input:focus {
+            border-color: blue;
+            outline: none;
+        }
+
+        input[type="email"] {
+            background-color: #f9f9f9;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+    <h2>🔸 Exercise 4: Use Pseudo-elements</h2>
+        <article>
+            <h3>Breaking News</h3>
+            <p>Some important text goes here.</p>
+        </article>
+    <h2>🔸 Exercise 5: Advanced Targeting</h2>
+        <section class="blog">
+            <h2>Blog Posts</h2>
+            <article>
+                <h3>Post One</h3>
+                <p>Text of post one.</p>
+            </article>
+            <article>
+                <h3>Post Two</h3>
+                <p>Text of post two.</p>
+            </article>
+        </section>
+    <style>
+        .blog h3 {
+            font-weight: bold;
+        }
+
+        .blog article:nth-of-type(2) p {
+            color: darkred;
+        }
+
+        .blog article:nth-child(2) {
+            background-color: lightyellow;
+        }
+    </style>
+
+</body>
+</html>

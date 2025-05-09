@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Handbook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .containDetails {
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        summary {
+            list-style: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        summary::before {
+            content: "🔍 ";
+            transition: transform 0.3s ease;
+        }
+        details[open] summary::before {
+            transform: rotate(90deg);
+        }
+        details[open] summary {
+            color: #007BFF;
+        }
+        details p{
+            animation: fadeIn 0.3s ease-in-out;
+            margin: 10px 0 0 0;
+            font-size: 0.9em;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>    
+</head>
+<body>
+    <h1>📗 Student Dev Handbook</h1>
+    <details name="notes" class="containDetails">
+        <summary>HTML Basics</summary>
+        <p>HTML (HyperText Markup Language) is the standard language for creating web pages. It uses elements like <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;a&gt;</code> to structure content.</p>
+    </details>
+    <details name="notes" class="containDetails">
+        <summary>CSS Fundamentals</summary>
+        <p>CSS (Cascading Style Sheets) is used to style HTML elements. It allows you to control layout, colors, fonts, and more using selectors and properties.</p>
+    </details>
+    <details name="notes" class="containDetails">
+        <summary>JavaScript Basics</summary>
+        <p>JavaScript is a programming language that enables interactivity on web pages. It can be used for tasks like form validation, animations, and dynamic content updates.</p>
+    </details>
+    <details name="notes" class="containDetails">
+        <summary>Responsive Design</summary>
+        <p>Responsive design ensures that web pages look good on all devices. Techniques include using media queries, flexible grids, and responsive images.</p>
+    </details>
+    <details name="notes" class="containDetails">
+        <summary>Version Control with Git</summary>
+        <p>Git is a version control system that tracks changes in code. It allows developers to collaborate and manage code history effectively.</p>
+    </details>
+
+</body>
+</html>
